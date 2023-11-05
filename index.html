@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         
+		<!-- Bootstrap Min CSS --> 
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="assets/images/logo/thasaamah-icon.png">
+		<!-- Title -->
+		<title>Thasaamah Technology</title>
+    </head>
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="col-md-12">
+               <img src="assets/images/logo/thasaamah-logo.png" alt="">
+               <img class="line" src="assets/images/u.png" alt="">
+        
+            </div>
+        
+                
+            
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="container">
+        <div class="col-md-12">
+
+            <h2>Welcome to Qatar's Leading IT Product Supplier Company !!</h2>
+            <p>Thasaamah Technology is a well known name in the World of IT in Qatar, which is among one of the developing sectors in Qatar. 
+                It had a bunch of experienced workers to perform your works at its perfection which includes a complete solution for your IT requirements. </p>
+                </div>
+        </div>
+    </div>
+
+  
+   <div class="buttons">
+
+    <div class="container">
+
+
+        <div class="button-1">
+            <a href="https://www.google.com/maps?q=25.2555945,51.5070880&hl=en-QA&gl=qa&entry=gps&lucs=,47071704&g_ep=CAISBjYuNzkuMxgAIKzfASoJLDQ3MDcxNzA0QgJRQQ%3D%3D&g_st=iw" target="_blank" rel="noopener noreferrer">Our Location</a>
+        </div>
+       
+        <div class="button-2">
+            <a href="assets/Thasaamah_technology.pdf" target="_blank" rel="noopener noreferrer">Company Profile</a>
+        </div>
+       
+    </div>
+    </div>
+  
+
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div> 
+      </div>
+
+
+<script>
+
+    let button = document.querySelector(".primary-button");
+let item = document.querySelector(".primary-button .round");
+
+button.addEventListener("mouseenter", function(event) {
+  this.classList += " animate";
+
+  let buttonX = event.offsetX;
+  let buttonY = event.offsetY;
+
+  if (buttonY < 24) {
+    item.style.top = 0 + "px";
+  } else if (buttonY > 30) {
+    item.style.top = 48 + "px";
+  }
+
+  item.style.left = buttonX + "px";
+  item.style.width = "1px";
+  item.style.height = "1px";
+});
+
+button.addEventListener("mouseleave", function() {
+  this.classList.remove("animate");
+
+  let buttonX = event.offsetX;
+  let buttonY = event.offsetY;
+
+  if (buttonY < 24) {
+    item.style.top = 0 + "px";
+  } else if (buttonY > 30) {
+    item.style.top = 48 + "px";
+  }
+  item.style.left = buttonX + "px";
+});
+</script>
+    <script src="assets/js/jquery.min.js"></script> 
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+   
+    
+ 
+    
+    </body>
+    </html>
