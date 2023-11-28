@@ -158,6 +158,7 @@ margin-right: auto;
   .button-3 a{
     left: 88px;
     bottom: -16px;
+    z-index: 1;
   }
 
 }
